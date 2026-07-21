@@ -18,3 +18,18 @@ def parse_song_string(song_string):
         parsed_notes.append((note, duration))
 
     return parsed_notes
+
+
+def load_song_from_file(file_path):
+    """Reads a song from a .txt file, ignoring empty lines and comments starting with '#'."""
+    song_lines = []
+
+    with open(file_path, "r", encoding="utf-8") as file:
+        for line in file:
+            cleaned_line = line.strip()
+            # Skip empty lines and comment lines
+            if cleaned_line and not cleaned_line.startswith("#"):
+                song_lines.append(cleaned_line)
+
+    # Combine all lines into a single space-separated song string
+    return " ".join(song_lines)
