@@ -1,5 +1,6 @@
 
 
+
 def show_menu():
     """Displays the main interactive terminal menu."""
     print("\n" + "=" * 30)
@@ -7,11 +8,13 @@ def show_menu():
     print("=" * 30)
     print("1. Play sample song")
     print("2. Enter custom song string")
-    print("3. Exit program")
+    print("3. Play song from file")
+    print("4. Live Keyboard Piano Mode (TBD)")
+    print("5. Exit program")
     print("-" * 30)
 
 
 def get_user_choice():
     """Gets and returns the user's menu selection."""
-    choice = input("Enter your choice (1-3): ").strip()
+    choice = input("Enter your choice (1-5): ").strip()
     return choice
