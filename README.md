@@ -23,6 +23,3 @@ You can compose your own songs using space-separated tokens in the format `Note:
 - **Notes:** Supported notes are from `C4` to `E5` (e.g., `C4`, `D4`, `E4`, `F4`, `G4`, `A4`, `B4`, `C5`).
 - **Rest (Silence):** Use `R` for a silent pause.
 - **Duration:** A multiplier for the base note length (e.g., `:1` for normal, `:2` for double length, `:0.5` for half length).
-
-### Example
-`C4:1 D4:1 E4:1 C4:1 E4:1 C4:1 G4:2`
